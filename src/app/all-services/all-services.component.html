@@ -1,0 +1,119 @@
+<div [@routerTransition]>
+
+    <app-page-header [heading]="'All Services '" [icon]="'fa fa-cogs'">
+
+    </app-page-header>
+    <div class="row">
+        <div class="container">
+            <div class="card mb-3">
+                <div class="card-header "  >
+                    Service1 Details
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>Port</th>
+                            <th>IpAddr</th>
+                            <th>Status</th>
+                            <th>hostName</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let service of Service1">
+                            <td>{{service.name}}</td>
+                            <td>{{service.port}}</td>
+                            <td>{{service.ipAddr}}</td>
+                            <td>{{service.status}}</td>
+                            <td>{{service.hostName}}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary" (click)="UpStatus()" >Up</button>
+                                    <button type="button" class="btn btn-danger" (click)="DownStatus()">Down</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card mb-3">
+                <div class="card-header " >
+                    Service2 Details
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead >
+                        <tr>
+                            <th>name</th>
+                            <th>Port</th>
+                            <th>IpAddr</th>
+                            <th>Status</th>
+                            <th>hostName</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let service of Service2">
+                            <td>{{service.name}}</td>
+                            <td>{{service.port}}</td>
+                            <td>{{service.ipAddr}}</td>
+                            <td>{{service.status}}</td>
+                            <td>{{service.hostName}}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary" (click)="UpStatus2()">Up</button>
+                                    <button type="button" class="btn btn-danger" (click)="DownStatus2()" >Down</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card mb-3">
+                <div class="card-header " >
+                    Back-end Details
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>Port</th>
+                            <th>IpAddr</th>
+                            <th>Status</th>
+                            <th>hostName</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let Backend of backend">
+                            <td>{{Backend.name}}</td>
+                            <td>{{Backend.port}}</td>
+                            <td>{{Backend.ipAddr}}</td>
+                            <td>{{Backend.status}}</td>
+                            <td>{{Backend.hostName}}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary" (click)="Upbackend()">Up</button>
+                                    <button type="button" class="btn btn-danger"(click)="Downbackend()" >Down</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
