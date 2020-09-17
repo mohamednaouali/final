@@ -10,6 +10,7 @@ import {UpDownServiceService} from './services/up-down-service.service';
 import {DataFetchService} from './services/data-fetch.service';
 
 
+
 @NgModule({
     imports: [
         CommonModule,

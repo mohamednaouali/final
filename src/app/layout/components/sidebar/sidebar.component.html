@@ -12,6 +12,10 @@
             <i class="fa fa-database"></i>&nbsp;
             <span>{{ ' Kafka Environment' }}</span>
         </a>
+        <a [routerLink]="['/services-trace']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-user-secret"></i>&nbsp;
+            <span>{{ ' Services Trace' }}</span>
+        </a>
     </div>
     <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
         <i class="fa fa-fw fa-angle-double-{{collapsed?'right':'left'}}"></i>&nbsp;
